@@ -1,0 +1,17 @@
+<div class="users">
+	<form name="userData" (submit)="addUser()" novalidate>
+		<input type="text" id="name" name="inputName" placeholder="Enter Name.." class="NameInput" [(ngModel)]="inputName">
+		<br>
+		<br>
+        <input type="text" name="inputPhone" placeholder="Enter Phone.." class="PhoneInput" [(ngModel)]="inputPhone">
+		<br>
+		<br>
+		<input type="submit" value="Add User" class="user-submit"/>
+		<br>
+		<br>
+
+	</form>
+
+	<app-users-table [fetchedUsers]="users"></app-users-table>
+
+</div>

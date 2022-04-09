@@ -1,0 +1,12 @@
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Phone</th>
+    </tr>
+    <tr *ngFor="let user of fetchedUsers; let i = index;" class="users">
+        <td class="id">{{ i+1 }}</td>
+        <td class="name">{{ user.name }}</td>
+        <td class="phone">{{ user.phone }}</td>
+    </tr>
+</table>
